@@ -1,0 +1,7 @@
+body {
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    max-width: max-content;
+    min-width: auto;
+    color: yellow;
+    background-color: blue;
+}
