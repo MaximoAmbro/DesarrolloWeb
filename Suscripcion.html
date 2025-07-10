@@ -9,23 +9,23 @@
 </head>
 <body>
     <header>
-        <h1>Diario Benedettoo</h1>
-        <p>9 de julio de 2025</p>
+        <h1>Diario Benedetto</h1>
+        <p>11 de septiembre de 2001</p>
         <nav>
-
+            <div class="hamburger">☰</div>
             <ul class="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Política</a></li>
                 <li><a href="#">Economía</a></li>
                 <li><a href="#">Deportes</a></li>
                 <li><a href="#">Cultura</a></li>
-                <li><a href="suscripcion.html">Suscribirse</a></li>
+                <li><a href="subscription.html">Suscribirse</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="suscription">
-            <h2 id="suscription-title">HOLA</h2>
+        <section class="subscription">
+            <h2 id="subscription-title">HOLA</h2>
             <form id="subscription-form" novalidate>
                 <div class="form-container">
                     <div class="form-column">
@@ -86,7 +86,14 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="modal-close" class="modal-close">×</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-message"></p>
+            </div>
+        </div>
     </main>
-    <script src="suscripcion.js"></script>
+    <script src="subscription.js"></script>
 </body>
 </html>
