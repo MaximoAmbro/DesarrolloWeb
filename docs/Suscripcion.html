@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción - El Diario Moderno</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Diario Benedetto</h1>
+        <p>11 de septiembre de 2001</p>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Cultura</a></li>
+                <li><a href="subscription.html">Suscribirse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="subscription">
+            <h2 id="subscription-title">HOLA</h2>
+            <form id="subscription-form" novalidate>
+                <div class="form-container">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <span class="error" id="nombre-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" id="contrasena" name="contrasena" required>
+                            <span class="error" id="contrasena-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="repetir-contrasena">Repetir contraseña</label>
+                            <input type="password" id="repetir-contrasena" name="repetir-contrasena" required>
+                            <span class="error" id="repetir-contrasena-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edad" name="edad" required>
+                            <span class="error" id="edad-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                            <span class="error" id="telefono-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" id="direccion" name="direccion" required>
+                            <span class="error" id="direccion-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                            <span class="error" id="ciudad-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="codigo-postal">Código postal</label>
+                            <input type="text" id="codigo-postal" name="codigo-postal" required>
+                            <span class="error" id="codigo-postal-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">DNI</label>
+                            <input type="text" id="dni" name="dni" required>
+                            <span class="error" id="dni-error"></span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="modal-close" class="modal-close">×</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </main>
+    <script src="subscription.js"></script>
+</body>
+</html>
